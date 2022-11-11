@@ -1,6 +1,6 @@
 public class StepTracker {
 
-    private MonthData[] monthToData;
+    private final MonthData[] monthToData;
     private int target = 10000;
 
     public StepTracker() {
@@ -76,7 +76,7 @@ public class StepTracker {
         }
     }
 
-    class MonthData {
+    static class MonthData {
         int[] days;
 
         public MonthData() {
